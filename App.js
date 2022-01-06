@@ -1,11 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View,Image } from 'react-native';
+import Car from './Containers/CarItem/car';
+
+import CarList from "./Containers/CarList/CarList";
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      {/* <Car name={"Model x"} tagline={"Starting at $45,000"} image={require("./assets/images/ModelX.jpeg")}></Car> */}
+     <CarList></CarList>
       <StatusBar style="auto" />
     </View>
   );
@@ -14,8 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    backgroundColor: '#f0f0'
+  }
 });
+
